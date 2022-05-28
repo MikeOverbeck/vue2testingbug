@@ -1,5 +1,3 @@
-# vue2bug
-
 ## Description
 This is a boilerplate project created by @vue/cli to demonstrate the broken coverage reporting when running Jest unit testing.
 ## Steps to recreate this project.
