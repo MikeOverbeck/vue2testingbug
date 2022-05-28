@@ -9,4 +9,10 @@ describe('HelloWorld.vue', () => {
     })
     expect(wrapper.text()).toMatch(msg)
   })
+  // Test written for sum method, but not mult.
+  // Should report uncovered lines in coverage report.
+  it('test sum method', () => {
+    const wrapper = shallowMount(HelloWorld)
+    expect(wrapper.vm.sum(5, 5)).toBe(10)
+  })
 })

@@ -33,9 +33,22 @@
 
 <script>
 export default {
+  // While unit tests for code inside this block do run and pass/fail appropriately,
+  // none of the lines are counted in the code coverage report.
+  // I've written a test for sum, but not for mult.
+  // The test passes, but while there is no test for mult, I still
+  // see 100% coverage in the coverage report.
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods: {
+    sum (a, b) {
+      return a + b
+    },
+    mult (a, b) {
+      return a * b
+    }
   }
 }
 </script>
